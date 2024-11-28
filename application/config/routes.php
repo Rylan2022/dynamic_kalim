@@ -58,10 +58,12 @@ $route['about'] = 'homecontroller/about';
 $route['career'] = 'homecontroller/career';
 
 // add 
-$route['dashbord'] = 'admincontroller/dashbord';
 $route['login'] = 'admincontroller/login';
 $route['register'] = 'admincontroller/register';
-$route['aboutDashbord'] = 'admincontroller/aboutDashbord';
+// $route['aboutDashbord'] = 'admincontroller/aboutDashbord';
+// $route['dashbord'] = 'admincontroller/dashbord';
+$route['aboutAdmin'] = 'aboutDasCon/index';
+
 
 
 

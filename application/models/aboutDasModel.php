@@ -2,6 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class aboutDasModel extends CI_Model {
+    public function __construct() {
+        parent::__construct();
+        $this->load->database();
+    }
 
     public function getTable1Data() {
         return $this->db->get('table1')->result_array();
@@ -13,6 +17,9 @@ class aboutDasModel extends CI_Model {
 
     public function getTable3Data() {
         return $this->db->get('table3')->result_array();
+    }
+    public function getTable4Data() {
+        return $this->db->get('table4')->result_array();
     }
 
     public function updateTable1($data) {
@@ -28,5 +35,9 @@ class aboutDasModel extends CI_Model {
     public function updateTable3($data) {
         $this->db->where('id', $data['id']);
         $this->db->update('table3', $data);
+    }
+    public function updateTable4($data) {
+        $this->db->where('id', $data['id']);
+        $this->db->update('table4', $data);
     }
 }

@@ -57,7 +57,7 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">About Us</a>
+                                    <a class="nav-link" href="<?php echo base_url('/aboutAdmin');?>">About Us</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Services</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Contact</a>
                                 </nav>
@@ -70,25 +70,28 @@
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
+                                    Properties
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                            <a class="nav-link" href="login.html">All Property</a>
+                                            <a class="nav-link" href="register.html">One BHK</a>
+                                            <a class="nav-link" href="password.html">Two BHK</a>
+                                            <a class="nav-link" href="password.html">Three BHK</a>
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
+                                    Features
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
+                                            <a class="nav-link" href="401.html">Agents</a>
+                                            <a class="nav-link" href="404.html">Photo Gallery</a>
+                                            <a class="nav-link" href="500.html">Blogs</a>
+                                            <a class="nav-link" href="500.html">FAQs</a>
+                                            <a class="nav-link" href="500.html">Single Property</a>
                                         </nav>
                                     </div>
                                 </nav>
@@ -103,10 +106,6 @@
                                 Tables
                             </a>
                         </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
                     </div>
                 </nav>
             </div>

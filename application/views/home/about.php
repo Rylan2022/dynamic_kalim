@@ -28,8 +28,8 @@
                     </div>
                     <?php endforeach; ?>
                     <div class="col-lg-8">
-                    <?php foreach ($table3 as $row): ?>
                         <div class="row row-cols-md-2 row-cols-1">
+                            <?php foreach ($table3 as $row): ?>
                             <div class="col border-start border-geay mb-5">
                                 <div class="simple-thumb transation px-4">
                                     <span class="h3 down-line text-general mb-4 d-table"><?php echo $row['number_1']; ?></span>
@@ -58,8 +58,9 @@
                                     <p>Creating a higher spacing and how people move through a unique and impactful campaign.</p>
                                 </div>
                             </div> -->
+                            <?php endforeach; ?>
                         </div>
-                        <?php endforeach; ?>
+                       
                     </div>
                 </div>
             </div>
@@ -67,65 +68,66 @@
         <!--============== Features End ==============-->
 
         <!--============== Banner Start ==============-->
-        <div class="full-row paraxify" style="background-image: url(assets/images/background/bg-4.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        <?php foreach ($table4 as $row): ?>
+        <div class="full-row paraxify" style="background-image: url(<?php echo $row['image_path']; ?>); background-repeat: no-repeat; background-position: center center; background-size: cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-8">
                         <div class="text-white">
-                            <span class="tagline text-primary">Persional Virtual Assistants</span>
-                            <h3 class="mb-4 text-white">Since our foundation in 2005 our goal has been to use technology to create experiences with a deeper impact.</h3>
-                            <p>Diam egestas elit cum accumsan volutpat dignissim sollicitudin aliquet auctor luctus aliquet pede natoque consequat dolor hendrerit eget a mi curae;. Ornare vestibulum ornare taciti nunc penatibus parturient. Leo ornare dolor
-                                consectetuer luctus inceptos montes. Molestie montes condimentum ut primis.</p>
-                            <p>Nascetur turpis dignissim class porta facilisis sapien mus. Rhoncus condimentum elementum sodales arcu ante justo maecenas non facilisis mauris sagittis felis. Ac laoreet urna lacinia luctus in duis, sem interdum netus, augue
-                                pulvinar suscipit Porta vel, ultricies sapien parturient sollicitudin bibendum consectetuer felis.</p>
+                            <span class="tagline text-primary"><?php echo $row['title_5']; ?></span>
+                            <h3 class="mb-4 text-white"><?php echo $row['title_6']; ?></h3>
+                            <p><?php echo $row['description_4']; ?></p>
+                            <p><?php echo $row['description_4']; ?></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <?php endforeach; ?>
         <!--============== Banner End ==============-->
 
         <!--============== Approch Section Start ==============-->
+        <?php foreach ($table5 as $row): ?>
         <div class="full-row pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="">
-                            <span class="tagline-2 text-primary">Approch</span>
-                            <h2 class="text-secondary mb-4">We’re changing the way people think of UI/UX creation.</h2>
-                            <p>A full-stack structure for our <b>working workflow processes</b>, were from the funny the century initial all the made, have spare to negatives.</p>
+                            <span class="tagline-2 text-primary"><?php echo $row['title_6']; ?></span>
+                            <h2 class="text-secondary mb-4"><?php echo $row['title_7']; ?></h2>
+                            <p><?php echo $row['description_5']; ?></p>
                         </div>
                         <div class="img-source">
-                            <img src="assets/images/clipart/mission-vission.jpg" alt="">
+                            <img src="<?php echo $row['Image_path']; ?>" alt="">
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="bg-white rounded border p-30">
-                            <h4 class="mb-3">Mission Statement</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis,
-                                at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.</p>
-                            <p>Posuere ante tincidunt sed porta senectus fusce interdum. Dictum class semper Ornare venenatis habitant sodales. Venenatis volutpat torquent. Curae; suspendisse ligula suscipit magna. Interdum dapibus in nulla mollis velit
-                                taciti mollis gravida torquent lacus lobortis volutpat elementum leo pharetra. Hac congue consequat ante laoreet consectetuer. Cum. Nulla nisl purus a. Et felis platea ligula cubilia massa ultrices leo iaculis porttitor.</p>
-                            <h4 class="mb-3">Property Construction Terms</h4>
-                            <p>Dolor nunc accumsan. Nostra praesent elit a lacus pharetra. Elit gravida, scelerisque fringilla netus euismod augue a vitae enim erat urna sit, rhoncus. Sociis ligula praesent. Tempus dui taciti integer, convallis Senectus
-                                facilisi molestie. Augue libero tincidunt volutpat. Ante hendrerit class etiam aliquet habitasse aenean phasellus bibendum dolor cras fringilla sem praesent consectetuer tempor venenatis donec. Turpis porta vel augue.</p>
-                            <p>Aliquam sollicitudin consequat praesent eu diam. Aptent auctor bibendum. Vulputate porttitor. Taciti tincidunt taciti vel cubilia posuere nascetur ultrices ultrices lectus ridiculus sodales pharetra felis eget nonummy justo
-                                mauris blandit. consequat praesent eu diam. Aptent auctor bibendum. Vulputate porttitor. Taciti tincidunt taciti vel cubilia posuere nascetur.</p>
+                            <h4 class="mb-3"><?php echo $row['title_8']; ?></h4>
+                            <p><?php echo $row['description_6']; ?></p>
+                            <!-- <p>Posuere ante tincidunt sed porta senectus fusce interdum. Dictum class semper Ornare venenatis habitant sodales. Venenatis volutpat torquent. Curae; suspendisse ligula suscipit magna. Interdum dapibus in nulla mollis velit
+                                taciti mollis gravida torquent lacus lobortis volutpat elementum leo pharetra. Hac congue consequat ante laoreet consectetuer. Cum. Nulla nisl purus a. Et felis platea ligula cubilia massa ultrices leo iaculis porttitor.</p> -->
+                            <h4 class="mb-3"><?php echo $row['title_9']; ?></h4>
+                            <p><?php echo $row['description_7']; ?></p>
+                            <!-- <p>Aliquam sollicitudin consequat praesent eu diam. Aptent auctor bibendum. Vulputate porttitor. Taciti tincidunt taciti vel cubilia posuere nascetur ultrices ultrices lectus ridiculus sodales pharetra felis eget nonummy justo
+                                mauris blandit. consequat praesent eu diam. Aptent auctor bibendum. Vulputate porttitor. Taciti tincidunt taciti vel cubilia posuere nascetur.</p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <?php endforeach; ?>
         <!--============== Approch Section End ==============-->
 
         <!--============== Statistics Section Start ==============-->
+        <?php foreach ($table6 as $row): ?>
         <div class="full-row pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="text-secondary mb-5">
-                            <span class="tagline-2 text-primary">Statistics</span>
-                            <h2 class="text-secondary mb-4">Number of projects we completed</h2>
+                            <span class="tagline-2 text-primary"><?php echo $row['title_9']; ?></span>
+                            <h2 class="text-secondary mb-4"><?php echo $row['title_10']; ?></h2>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -133,53 +135,53 @@
                             <div class="row row-cols-md-3 row-cols-1">
                                 <div class="col">
                                     <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
-                                        <span class="count-num text-secondary h1" data-speed="3000" data-stop="65">65</span>
-                                        <div class="text-secondary h5 py-2">App Designs</div>
-                                        <p>Creating a full range UI/UX apps accross the whole platform.</p>
+                                        <span class="count-num text-secondary h1" data-speed="3000" data-stop="65"><?php echo $row['title_11']; ?></span>
+                                        <div class="text-secondary h5 py-2"><?php echo $row['title_12']; ?></div>
+                                        <p><?php echo $row['description_8']; ?></p>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
-                                        <span class="count-num text-secondary h1" data-speed="3000" data-stop="137">137</span>
-                                        <div class="text-secondary h5 py-2">Markets Campaigns</div>
-                                        <p>We have strict intentions to completely change the way of UI/UX creation.</p>
+                                        <span class="count-num text-secondary h1" data-speed="3000" data-stop="137"><?php echo $row['title_13']; ?></span>
+                                        <div class="text-secondary h5 py-2"><?php echo $row['title_14']; ?></div>
+                                        <p><?php echo $row['description_9']; ?></p>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
-                                        <span class="count-num text-secondary h1" data-speed="3000" data-stop="45">45</span>
-                                        <div class="text-secondary h5 py-2">API Integrations</div>
-                                        <p>Software-enabled platforms to completely change the way of UI/UX iterations.</p>
+                                        <span class="count-num text-secondary h1" data-speed="3000" data-stop="45"><?php echo $row['title_15']; ?></span>
+                                        <div class="text-secondary h5 py-2"><?php echo $row['title_16']; ?></div>
+                                        <p><?php echo $row['description_10']; ?></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="capability-avg">
                             <div class="bar-progress fact-counter text-secondary position-relative mb-4">
-                                <span class="pb-2 d-block text-start">UI/UX Design</span>
+                                <span class="pb-2 d-block text-start"><?php echo $row['title_17']; ?></span>
                                 <div class="progress bg-general count wow fadeIn" data-wow-duration="0ms">
-                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="80">80</span>%</div>
+                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="80"><?php echo $row['percentage_1']; ?></span>%</div>
                                     <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="80" aria-valuemax="100"> </div>
                                 </div>
                             </div>
                             <div class="bar-progress fact-counter text-secondary position-relative mb-4">
-                                <span class="pb-2 d-block text-start">Java Development</span>
+                                <span class="pb-2 d-block text-start"><?php echo $row['title_18']; ?></span>
                                 <div class="progress bg-general count wow fadeIn" data-wow-duration="0ms">
-                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="51">51</span>%</div>
+                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="51"><?php echo $row['percentage_2']; ?></span>%</div>
                                     <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="51" aria-valuemax="100"> </div>
                                 </div>
                             </div>
                             <div class="bar-progress fact-counter text-secondary position-relative mb-4">
-                                <span class="pb-2 d-block text-start">PHP Programming</span>
+                                <span class="pb-2 d-block text-start"><?php echo $row['title_19']; ?></span>
                                 <div class="progress bg-general count wow fadeIn" data-wow-duration="0ms">
-                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="95">95</span>%</div>
+                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="95"><?php echo $row['percentage_3']; ?></span>%</div>
                                     <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="95" aria-valuemax="100"> </div>
                                 </div>
                             </div>
                             <div class="bar-progress fact-counter text-secondary position-relative mb-4">
-                                <span class="pb-2 d-block text-start">Mobile App</span>
+                                <span class="pb-2 d-block text-start"><?php echo $row['title_20']; ?></span>
                                 <div class="progress bg-general count wow fadeIn" data-wow-duration="0ms">
-                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="90">90</span>%</div>
+                                    <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="90"><?php echo $row['percentage_4']; ?></span>%</div>
                                     <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="90" aria-valuemax="100"> </div>
                                 </div>
                             </div>
@@ -188,6 +190,7 @@
                 </div>
             </div>
         </div>
+        <?php endforeach; ?>
         <!--============== Statistics Section End ==============-->
 
         <!--============== Agents Start ==============-->

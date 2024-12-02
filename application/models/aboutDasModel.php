@@ -7,6 +7,8 @@ class aboutDasModel extends CI_Model {
         $this->load->database();
     }
 
+    
+
     public function getTable1Data() {
         return $this->db->get('table1')->result_array();
     }
@@ -20,6 +22,15 @@ class aboutDasModel extends CI_Model {
     }
     public function getTable4Data() {
         return $this->db->get('table4')->result_array();
+    }
+    public function getTable5Data() {
+        return $this->db->get('table5')->result_array();
+    }
+    public function getTable6Data() {
+        return $this->db->get('table6')->result_array();
+    }
+    public function getTable7Data() {
+        return $this->db->get('table7')->result_array();
     }
 
     public function updateTable1($data) {
@@ -36,8 +47,22 @@ class aboutDasModel extends CI_Model {
         $this->db->where('id', $data['id']);
         $this->db->update('table3', $data);
     }
-    public function updateTable4($data) {
-        $this->db->where('id', $data['id']);
+
+    public function update_table4($id, $data) {
+        $this->db->where('id', $id);
         $this->db->update('table4', $data);
+    }
+    public function update_table5($id, $data) {
+        $this->db->where('id', $id);
+        $this->db->update('table5', $data);
+    }
+
+    public function update_table6($id, $data) {
+        $this->db->where('id', $id);
+        $this->db->update('table6', $data);
+    }
+    public function update_table7($id, $data) {
+        $this->db->where('id', $id);
+        $this->db->update('table7', $data);
     }
 }

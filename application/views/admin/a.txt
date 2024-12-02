@@ -1,0 +1,56 @@
+        <!-- Tables 7 -->
+        <div class="table-container">
+            <h2 class="text-center">Table 7</h2>
+            <div class="table-responsive">
+                <table class="table table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th>Title-1</th>
+                            <th>Title-2</th>
+                            <th>Image-1</th>
+                            <th>Image-2</th>
+                            <th>Image-3</th>
+                            <th>Image-4</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (!empty($table7)): ?>
+                            <?php foreach ($table7 as $row): ?>
+                                <tr>
+                                    <form method="POST" action="<?= base_url('aboutDasCon/updateTable7') ?>"
+                                        enctype="multipart/form-data">
+                                        <td>
+                                            <input type="text" class="form-control" name="title_1"
+                                                value="<?= htmlspecialchars($row['title_1']) ?>" readonly>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" name="title_2"
+                                                value="<?= htmlspecialchars($row['title_2']) ?>" readonly>
+                                        </td>
+                                        <?php for ($i = 1; $i <= 4; $i++): ?>
+                                            <td>
+                                                <img src="<?= base_url($row['image_path_' . $i]) ?>" alt="Image" width="100"><br>
+                                                <input type="file" name="image_<?= $i ?>" class="form-control"
+                                                    style="display: none;">
+                                                <input type="hidden" name="image_path_<?= $i ?>"
+                                                    value="<?= htmlspecialchars($row['image_path_' . $i]) ?>">
+                                            </td>
+                                        <?php endfor; ?>
+                                        <td>
+                                            <input type="hidden" name="id" value="<?= htmlspecialchars($row['id']) ?>">
+                                            <button type="button" class="btn btn-edit" onclick="toggleEdit(this)">Edit</button>
+                                            <button type="submit" class="btn btn-save" disabled>Save</button>
+                                        </td>
+                                    </form>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="7" class="no-data">No data available</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>

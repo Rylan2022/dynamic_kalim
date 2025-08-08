@@ -8,6 +8,7 @@
                         <span class="banner-tagline font-medium text-white"><?php echo $row['description_1']; ?></span>
                     </div>
                 </div>
+                
                 <?php endforeach; ?>
             </div>
         </div>

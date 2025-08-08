@@ -46,7 +46,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="<?php echo base_url('/aboutAdmin');?>" class="logo d-flex align-items-center">
         <img src=" <?php echo base_url(''); ?>assets/admin_assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <div class="d-none d-lg-block">NiceAdmin</div>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->

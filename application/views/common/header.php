@@ -56,9 +56,9 @@
                         </div>
                         <div class="col">
                             <ul class="nav-bar-top right list-color-white d-flex">
-                                <li><a href="<?php echo base_url('about');?>"><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
-                                <li><a href="<?php echo base_url('signup');?>"><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
-                                <li><a href="<?php echo base_url('signin');?>"><i class="fa-brands fa-square-whatsapp"></i> Whatsapp</a></li>
+                                <li><a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i> Whatsapp</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     <div class="row">
                         <div class="col">
                             <nav class="navbar navbar-expand-lg nav-white nav-primary-hover nav-line-active">
-                                <a class="navbar-brand" href="#"><img class="nav-logo" src="<?php echo base_url(''); ?>assets/images/logo/real_estate_logo_png.png" alt="Image not found !"></a>
+                                <a class="navbar-brand" href="#"><img class="nav-logo" src="<?php echo base_url('assets/images/logo/real_estate_logo_png.png'); ?>" alt="Image not found !"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
                                   </button>

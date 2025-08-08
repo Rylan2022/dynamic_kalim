@@ -58,10 +58,10 @@ $route['about'] = 'homecontroller/about';
 $route['career'] = 'homecontroller/career';
 
 // add 
-$route['login'] = 'admincontroller/login';
-$route['register'] = 'admincontroller/register';
-// $route['aboutDashbord'] = 'admincontroller/aboutDashbord';
-// $route['dashbord'] = 'admincontroller/dashbord';
+$route['login'] = 'AdminController/login';
+$route['register'] = 'AdminController/register';
+$route['aboutDashbord'] = 'AdminController/aboutDashbord';
+$route['dashbord'] = 'AdminController/dashbord';
 $route['aboutAdmin'] = 'aboutDasCon/index';
 
 
@@ -69,9 +69,9 @@ $route['aboutAdmin'] = 'aboutDasCon/index';
 
 
 
-$route['admincontroller/add_blog'] = 'admincontroller/add_blog';
-$route['admincontroller/edit/(:num)'] = 'admincontroller/edit/$1';
-$route['admincontroller/delete/(:num)'] = 'admincontroller/delete/$1';
+$route['AdminController/add_blog'] = 'AdminController/add_blog';
+$route['AdminController/edit/(:num)'] = 'AdminController/edit/$1';
+$route['AdminController/delete/(:num)'] = 'AdminController/delete/$1';
 
 $route['agent_details'] = 'agentcontroller/agent_details';
 $route['agent_grid'] = 'agentcontroller/grid';

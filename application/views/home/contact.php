@@ -50,6 +50,10 @@
                                     </div>
                                     <div class="col-md-6 mb-20">
                                         <label class="mb-2">Your Email:</label>
+                                        <input type="text" class="form-control bg-white" name="name" required="">
+                                    </div>
+                                    <div class="col-md-6 mb-20">
+                                        <label class="mb-2">Your Email:</label>
                                         <input type="email" class="form-control bg-white" name="email" required="">
                                     </div>
                                     <div class="col-md-12 mb-20">
